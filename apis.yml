@@ -1,8 +1,25 @@
 aid: c14
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/c14.png
 name: C14
-description: 'C14 is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'C14 is a fintech company operating at c14.money that provides fiat-to-crypto
+  on-ramp and payment infrastructure, letting applications and platforms embed a compliant
+  flow for users to buy digital assets with cards and other payment methods. It was surfaced
+  as a portfolio company of General Catalyst and added to the API Evangelist network for
+  enrichment. This enrichment pass could not reach C14''s developer surface (the public
+  hosts reset TLS connections to automated clients), so no OpenAPI, docs, or SDK artifacts
+  could be harvested this round; the profile carries confirmed domain-security signals
+  probed from DNS and remains a lead awaiting a reachable developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/c14/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Crypto
+- Payments
+- On-Ramp
+- Digital Assets
+- Web3
 apis: []
+common:
+- type: DomainSecurity
+  url: security/c14-domain-security.yml
+- type: Website
+  url: https://c14.money
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
